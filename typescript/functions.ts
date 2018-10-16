@@ -13,11 +13,11 @@ function returnSomething() : string {
 console.log(returnSomething());
 
 // function types
-function createStatus(id: number, name: string): string {
-  return id + name;
+function createStatus(id: number, name?: string): string {
+  return `as ${id}`;
 }
 
 let statusCreator : (nums: number, chars: string) => string;
 
-let newStatus: string = createStatus(3, "In progress");
+let newStatus: string = createStatus(31);
 console.log(newStatus);

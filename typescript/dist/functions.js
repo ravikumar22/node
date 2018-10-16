@@ -12,8 +12,8 @@ function returnSomething() {
 console.log(returnSomething());
 // function types
 function createStatus(id, name) {
-    return id + name;
+    return "as " + id;
 }
 var statusCreator;
-var newStatus = createStatus(3, "In progress");
+var newStatus = createStatus(31);
 console.log(newStatus);
